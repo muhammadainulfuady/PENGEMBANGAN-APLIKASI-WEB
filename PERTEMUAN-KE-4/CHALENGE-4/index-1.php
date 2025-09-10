@@ -1,8 +1,8 @@
 <?php
 
-$daftar_buah = ["Apel", "Jeruk", "Pisang"]
+$my_fruits = ["Apel", "Jeruk", "Pisang"];
 
-    ?>
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,8 +16,8 @@ $daftar_buah = ["Apel", "Jeruk", "Pisang"]
 <body>
     <h1>Daftar Buah :</h1>
     <ul>
-        <?php foreach ($daftar_buah as $buah): ?>
-            <li><?= $buah ?></li>
+        <?php foreach ($my_fruits as $fruit): ?>
+            <li><?= $fruit ?></li>
         <?php endforeach ?>
     </ul>
 </body>
