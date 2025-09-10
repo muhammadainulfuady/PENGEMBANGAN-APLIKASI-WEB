@@ -57,7 +57,6 @@ if (isset($_GET['submit'])) {
         <input type="text" name="nilai">
         <button type="submit" name="submit">Kirim</button>
     </form>
-
     <?php if ($_GET['nilai'] >= 80 && $_GET['nilai'] <= 100) {
         echo "<p>Nilai huruf : <b>A</b></p>";
     } elseif ($_GET['nilai'] >= 75 && $_GET['nilai'] < 80) {
