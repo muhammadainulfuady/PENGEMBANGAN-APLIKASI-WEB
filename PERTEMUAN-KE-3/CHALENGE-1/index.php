@@ -68,11 +68,11 @@ if (isset($_GET['submit'])) {
     } elseif ($_GET['nilai'] >= 55 && $_GET['nilai'] < 60) {
         echo "<p>Nilai huruf : <b>C</b></p>";
     } elseif ($_GET['nilai'] >= 50 && $_GET['nilai'] < 55) {
-        echo "<p>Nilai huruf : <b>D+</b></p>";
+        echo "<p>Nilai huruf : <b  style='color: red;'>D+</b></p>";
     } elseif ($_GET['nilai'] >= 45 && $_GET['nilai'] < 50) {
-        echo "<p>Nilai huruf : <b>D</b></p>";
+        echo "<p>Nilai huruf : <b  style='color: red;'>D</b></p>";
     } elseif ($_GET['nilai'] >= 0 && $_GET['nilai'] < 45) {
-        echo "<p>Nilai huruf : <b>E</b></p>";
+        echo "<p>Nilai huruf : <b style='color: red';>E</b></p>";
     } else {
         echo "<p><b>Input tidak valid! Pastikan angka anda adalah : <br> <i>0 - 100</i></b></p>";
     } ?>

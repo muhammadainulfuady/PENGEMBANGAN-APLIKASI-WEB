@@ -8,9 +8,12 @@
 </head>
 
 <body>
-    <?php for ($iterasi = 28; $iterasi >= 1; $iterasi -= 3): ?>
-        <p>Itersai number <?= $iterasi ?></p>
-    <?php endfor ?>
-</body>
+    <?php
+    $nilai_akhir = 10;
+    $iterasi = 1;
+    for ($iterasi = 28; $iterasi >= 1; $iterasi -= 3) {
+        echo "<p>Itersai number$iterasi</p>";
+    }
+?>
 
 </html>

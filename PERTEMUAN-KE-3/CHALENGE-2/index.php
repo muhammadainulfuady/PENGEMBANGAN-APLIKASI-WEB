@@ -8,9 +8,13 @@
 </head>
 
 <body>
-    <?php for ($iterasi = 10; $iterasi >= 1; $iterasi--): ?>
+    <?php for ($iterasi = 20; $iterasi >= 1; $iterasi -= 2): ?>
         <p>Iterasi number <?= $iterasi ?></p>
     <?php endfor ?>
+    <?php for ($iterasi = 20; $iterasi >= 1; $iterasi -= 2): ?>
+        <p>Iterasi number <?= $iterasi ?></p>
+    <?php endfor ?>
+
 </body>
 
 </html>
