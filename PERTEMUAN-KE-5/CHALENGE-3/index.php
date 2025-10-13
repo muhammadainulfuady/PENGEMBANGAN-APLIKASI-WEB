@@ -4,45 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chalenge Ke-2</title>
-    <style> 
-.color {
-    color : green;
-}
-
-    </style>
+    <title>Chalenge Ke-3</title>
 </head>
 
 <body>
+
     <?php
-    $while_iterasi = 31;
-    // $do_while_iterasi = 28;
-    $number_rendah = 1;
 
-    echo "<h1>While Iterasi</h1>";
-    while ($while_iterasi >= $number_rendah) {
-        if ($while_iterasi % 2 == 1) {
-            echo "<p class='color'>Iteration number $while_iterasi</p>";
-        } else {
-            echo "<p>Iteration number $while_iterasi</p>";
+    function iteration($awal, $akhir, $color, $step )
+    {
+        for ($i = $awal; $i >= $akhir; $i -= $step) {
+            if ($i % $step == 0) {
+                echo "<p style='color: $color;'>Iteration number $i</p>"."<br>";
+            } else {
+                echo "<p>Iteration number $i</p>"."<br>";
+
+            }
         }
-        $while_iterasi -= 3;
     }
-    echo "<br>";
+    iteration(28, 1, "green", 9);
+        ?>
 
-// angka terendah harus 1 menentukan,
-// jumlah iterasi kalau angka yang muncul adalah ganjil selain warna hitam
-
-
-    // echo "<h1>Do While Iterasi</h1>";
-    // do {
-    //     echo "<p>Iteration number $do_while_iterasi</p>";
-    //     $do_while_iterasi -= 3;
-    // }
-    // while ($do_while_iterasi >= 1)
-    ?>
 </body>
 
 </html>
-
-<!-- 

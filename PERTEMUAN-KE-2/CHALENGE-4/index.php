@@ -23,9 +23,9 @@
 <body>
     <table border="1" cellpadding="10" cellspacing="0">
         <?php
-        for ($i = 0; $i <= 12; $i++) {
+        for ($i = 0; $i <= 10; $i++) {
             echo "<tr>";
-            for ($j = 0; $j <= 12; $j++) {
+            for ($j = 0; $j <= 10; $j++) {
                 if ($i == 0 && $j == 0) {
                     echo "<td></td>";
                 } elseif ($j == 0) {
@@ -33,15 +33,8 @@
                 } elseif ($i == 0) {
                     echo "<td class='kuning'>" . $j . "</td>";
                 } else {
-                    if ($i == $j) {
-                        echo "<td class='biru'>" . $i * $j . "</td>";
-                    } else {
-                        echo "<td class=''>" . $i * $j . "</td>";
-                        if ($i * $j % 2 == 0) {
-                            echo "<td class='coklat'>" . $i * $j . "</td>";
-
-                        }
-                    }
+                    $coba = $i < $j;
+                    echo $coba;
                 }
             }
             echo "</tr>";

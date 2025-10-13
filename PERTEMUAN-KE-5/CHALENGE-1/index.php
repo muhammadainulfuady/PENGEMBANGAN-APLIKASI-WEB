@@ -8,25 +8,21 @@
 </head>
 
 <body>
+    <p>Challenge - 1</p>
+
     <?php
-    $while_iterasi = 10;
-    $do_while_iterasi = 10;
-    $start = $while_iterasi * 2;
 
-    echo "<h1>While Iterasi</h1>";
-    while ($start >= $while_iterasi) {
-        echo "<p>Iteration number $while_iterasi</p>";
-        $while_iterasi -= $while_iterasi;
+    function iteration($number, $increment)
+    {
+        $iter = $number;
+        for ($i = 10; $i >= $number; $increment) {
+            echo "Iteration number " . $i . "<br>";
+        }
     }
-    echo "<br>";
+    iteration(1, $increment --= 1);
 
-    // echo "<h1>Do While Iterasi</h1>";
-    // do {
-    //     echo "<p>Iteration number $do_while_iterasi</p>";
-    //     $do_while_iterasi--;
-    // }
-    // while ($do_while_iterasi >= 1)
-    // ?>
+        ?>
+
 </body>
 
 </html>
