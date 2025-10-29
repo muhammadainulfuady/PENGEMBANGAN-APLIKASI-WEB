@@ -19,15 +19,17 @@ function tambahData($firstname, $addres)
 
 function updateData($firstname, $addres)
 {
+	$firstname = $_GET['firstname'];
+	$address = $_GET['address'];
 	$customerID = $_GET['customerID'];
-	if ($customerID === "" || !is_numeric($customerID)) {
+	if ($firstname === "" || $address === "" || $customerID === "") {
+		require_once "challenge-4.php";
+		$str_eror = "Error: Data tidak boleh kosong!";
+		echo "$str_eror";
+	}elseif ($customerID === "" || !is_numeric($customerID)) {
 		require_once "challenge-4.php";
 		$str_eror = "Error: ID harus berupa angka!";
-
-		array_push($eror, $str_eror);
-		foreach ($eror as $key) {
-			echo "$key";
-		}
+		echo "$str_eror";
 	} else {
 		global $dbc;
 		$statement = $dbc->prepare("UPDATE customer SET firstname = :firstname, address = :address WHERE customerID = :customerID");
@@ -35,7 +37,9 @@ function updateData($firstname, $addres)
 		$statement->bindValue(':address', $_GET['address']);
 		$statement->bindValue(':customerID', $_GET['customerID']);
 		$statement->execute();
-		header("Location:challenge-5.php");
+		require_once "challenge-4.php";
+		$str_eror = "Error: Okeh data berhasil di hapus!";
+		echo "$str_eror";
 	}
 }
 
