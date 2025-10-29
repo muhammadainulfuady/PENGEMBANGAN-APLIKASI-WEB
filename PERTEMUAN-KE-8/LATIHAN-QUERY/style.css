@@ -1,0 +1,58 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: verdana;
+}
+
+body {
+	background-image: url(gambar-2.jpg);
+	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-position: center;
+  	background-attachment: fixed;
+}
+
+/*styling untuk table dari database*/
+.container table {
+	border: 1px solid orange;
+	margin: 10px auto;
+	width: 60%;
+	table-layout: fixed;
+	height: 400px;
+	border-collapse: collapse;
+}
+
+.container th, td {
+	padding: 10px;
+	border: 1px solid orange;
+	text-align: center;
+	word-wrap: break-word;
+}
+
+.container td {
+	background-color: black;
+	color: lightgreen;
+}
+
+.container th {
+	background-color: lightgreen;
+}
+
+/*styling challenge*/
+.challenge {
+	color: red;
+	text-align: center;
+	width: 40%;
+	margin: 0 auto;
+}
+
+.alfabet table {
+	margin: 0 auto;
+}
+
+.challenge img {
+	width: 500px;
+	display: inline-block;
+	margin: 0 auto;
+}
